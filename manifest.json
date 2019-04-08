@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Profanity Filter",
+    "description": "Helps censor undesirable words to make the internet family friendly for the kids",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
